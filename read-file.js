@@ -1,11 +1,9 @@
-import { require, readFile } from "fs/promises";
+import { readFile } from "fs/promises";
 
-fs = require("fs");
-
-fs.readFile("foo", "hello.json", (err, data) => {
-  if (err) {
-    console.error(err);
-    return;
-  }
+readFile("./foo", "utf8").then((data) => {
   console.log(data);
+});
+
+readFile("./hello.json", "utf8").then((data) => {
+  console.log(JSON.parse(data));
 });
