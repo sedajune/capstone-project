@@ -2,3 +2,5 @@
 import { writeFile } from "fs/promises";
 
 console.log("Hello World");
+
+writeFile("foo", "bar");
