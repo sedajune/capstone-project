@@ -1,6 +1,8 @@
-import { readFile } from "fs/promises";
+import { require, readFile } from "fs/promises";
 
-readFile("foo", (err, data) => {
+fs = require("fs");
+
+fs.readFile("foo", "hello.json", (err, data) => {
   if (err) {
     console.error(err);
     return;
