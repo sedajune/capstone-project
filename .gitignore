@@ -3,3 +3,5 @@ node_modules
 hello.json
 foo
 .DS_Store
+
+out/*
